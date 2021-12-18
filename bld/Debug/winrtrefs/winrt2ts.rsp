@@ -1,0 +1,5 @@
+-emitAnyForUnresolvedTypes
+-outFilePath
+f:\polyu\fyp\ver10\app4\bld\debug\winrtrefs\winrtrefs-temp.d.ts
+-emitDocumentation
+-suppressWarningsForUnresolvedWindowsTypes

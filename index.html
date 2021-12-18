@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ADS-B website</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/read_file.js"></script>
+    <script type="text/javascript" src="js/gmap.js"></script>
+    <script type="text/javascript" src="js/controlbar.js"></script>
+
+</head>
+<body>
+    <div class="split left">
+        <div id="map">
+        </div>
+    </div>
+    <div class="split right">
+        <div class="bar">
+            <div class="" "slidecontainer">
+                <input type="range" class="slider" id="myRange" step="500">
+                <p>Value: <span id="bar"></span></p>
+            </div>
+            <div>
+                <input onclick="con_bar();" type=button value="Load control bar">
+                <input onclick="algorithm();" type=button value="Slot">
+                <input onclick="analysis();" type=button value="Analysis">
+                <input onclick="circulating();" type=button value="Circulating">
+                <input onclick="animation();" type=button value="Play in animation">
+                <input onclick="end();" type=button value="Stop the animation">
+                <input type="text" id="aircraft">
+                <input onclick="specific_aircraft();" type=button value="Enter">
+
+            </div>
+        </div>
+        <div>
+            <div class="route1">
+                <div id="route1data"></div>
+            </div>
+            <div class="route2">
+                <div id="route2data"></div>
+            </div>
+        </div>
+      
+        
+
+
+
+
+
+    </div>
+
+
+
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7tD3oB7YZogov3TlVG55lJLUys1cXSG8&callback=initMap">
+        </script>
+</body>
+</html>
